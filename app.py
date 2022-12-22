@@ -109,7 +109,7 @@ if model_opt!='None':
             st.success(f"The predicted result is {predict_result.fetch_result(result[0])}", icon="✅")
 
         elif model_opt == 'Naive Bayes':
-            model_file="ml_saved_models/naiva_bayes.pkl"
+            model_file="ml_saved_models/naive_bayes.pkl"
             result=predict_result.model_call(model_file,X)
             with st.spinner('Wait for it...'):
                 time.sleep(3)
