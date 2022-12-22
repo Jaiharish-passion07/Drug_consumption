@@ -88,35 +88,35 @@ if model_opt!='None':
     if predict:
         X=inpt_features
         if model_opt=='Decision Tree':
-            model_file="C:\\Users\\JAI HARISH\\PycharmProjects\\ML_App\\ml_saved_models\\dec_tree.pkl"
+            model_file="ml_saved_models/dec_tree.pkl"
             result=predict_result.model_call(model_file,X)
             with st.spinner('Wait for it...'):
                 time.sleep(3)
             st.success(f"The predicted result is {predict_result.fetch_result(result[0])}", icon="✅")
 
         elif model_opt=='Logistic Regression':
-            model_file="C:\\Users\\JAI HARISH\\PycharmProjects\\ML_App\\ml_saved_models\\log_reg.pkl"
+            model_file="ml_saved_models/log_reg.pkl"
             result=predict_result.model_call(model_file,X)
             with st.spinner('Wait for it...'):
                 time.sleep(3)
             st.success(f"The predicted result is {predict_result.fetch_result(result[0])}", icon="✅")
 
         elif model_opt == 'Support Vector Machine':
-            model_file="C:\\Users\\JAI HARISH\\PycharmProjects\\ML_App\\ml_saved_models\\SVM.pkl"
+            model_file="ml_saved_models/SVM.pkl"
             result=predict_result.model_call(model_file,X)
             with st.spinner('Wait for it...'):
                 time.sleep(3)
             st.success(f"The predicted result is {predict_result.fetch_result(result[0])}", icon="✅")
 
         elif model_opt == 'Naive Bayes':
-            model_file="C:\\Users\\JAI HARISH\\PycharmProjects\\ML_App\\ml_saved_models\\naiva_bayes.pkl"
+            model_file="ml_saved_models/naiva_bayes.pkl"
             result=predict_result.model_call(model_file,X)
             with st.spinner('Wait for it...'):
                 time.sleep(3)
             st.success(f"The predicted result is {predict_result.fetch_result(result[0])}", icon="✅")
 
         elif model_opt == 'Perceptron':
-            model_file="C:\\Users\\JAI HARISH\\PycharmProjects\\ML_App\\ml_saved_models\\perceptron.pkl"
+            model_file="ml_saved_models/perceptron.pkl"
             result=predict_result.model_call(model_file,X)
             with st.spinner('Wait for it...'):
                 time.sleep(3)
